@@ -2,18 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package UserInterface.WorkAreas.FacultyRole;
+package UserInterface.WorkAreas.StudentRole;
+
+import UserInterface.WorkAreas.FacultyRole.*;
 
 /**
  *
  * @author rohan
  */
-public class ViewAndManageCourseJPanel extends javax.swing.JPanel {
+public class ViewTranscriptJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ViewAndManageCourseJPanel
      */
-    public ViewAndManageCourseJPanel() {
+    public ViewTranscriptJPanel() {
         initComponents();
     }
 
@@ -26,38 +28,33 @@ public class ViewAndManageCourseJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        labelViewTranscript = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        buttonRegister = new javax.swing.JButton();
         buttonLogout = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1500, 600));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("View and Manage Courses");
+        labelViewTranscript.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        labelViewTranscript.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelViewTranscript.setText("View Transcript");
+        labelViewTranscript.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Couse Code", "Course Name", "Intake", "Scheduled Day", "Scheduled Time", "Mode", "Status"
+                "Course Name", "Couse Code", "Professor", "Mode", "Credits"
             }
         ) {
-            Class[] types = new Class [] {
-                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class
-            };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, true
+                false, false, false, false, false
             };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
@@ -65,8 +62,9 @@ public class ViewAndManageCourseJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("Save");
+        buttonRegister.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        buttonRegister.setText("Register");
+        buttonRegister.setEnabled(false);
 
         buttonLogout.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         buttonLogout.setText("Logout");
@@ -78,44 +76,41 @@ public class ViewAndManageCourseJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(500, 500, 500)
-                        .addComponent(jLabel1)
-                        .addGap(231, 231, 231)
-                        .addComponent(buttonLogout))
+                        .addGap(320, 320, 320)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 858, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(226, 226, 226)
+                        .addComponent(buttonRegister))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(332, 332, 332)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 768, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(134, 134, 134)
-                        .addComponent(jButton1)))
-                .addContainerGap(194, Short.MAX_VALUE))
+                        .addGap(500, 500, 500)
+                        .addComponent(labelViewTranscript, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(218, 218, 218)
+                        .addComponent(buttonLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(buttonRegister))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(buttonLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelViewTranscript)
+                            .addComponent(buttonLogout))
+                        .addGap(43, 43, 43)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonLogout;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton buttonRegister;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel labelViewTranscript;
     // End of variables declaration//GEN-END:variables
 }

@@ -41,8 +41,16 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="150" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="786" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jButton1" min="-2" pref="150" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="786" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="buttonLogout" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="511" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,7 +81,9 @@
               </Group>
               <EmptySpace pref="43" max="32767" attributes="0"/>
               <Component id="jButton1" min="-2" pref="30" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="buttonLogout" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -235,6 +245,14 @@
             <LineBorder roundedCorners="true" thickness="2"/>
           </Border>
         </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="buttonLogout">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Logout"/>
       </Properties>
     </Component>
   </SubComponents>

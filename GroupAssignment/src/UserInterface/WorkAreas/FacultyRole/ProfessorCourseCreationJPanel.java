@@ -53,6 +53,7 @@ public class ProfessorCourseCreationJPanel extends javax.swing.JPanel {
         textCourseDescription = new javax.swing.JTextArea();
         labelMode = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
+        buttonLogout = new javax.swing.JButton();
 
         labelCreateCourseTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         labelCreateCourseTitle.setText("Create Course");
@@ -133,6 +134,9 @@ public class ProfessorCourseCreationJPanel extends javax.swing.JPanel {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In-Person", "Online" }));
 
+        buttonLogout.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        buttonLogout.setText("Logout");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -141,7 +145,9 @@ public class ProfessorCourseCreationJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(600, 600, 600)
-                        .addComponent(labelCreateCourseTitle))
+                        .addComponent(labelCreateCourseTitle)
+                        .addGap(269, 269, 269)
+                        .addComponent(buttonLogout))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(500, 500, 500)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,7 +204,9 @@ public class ProfessorCourseCreationJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(labelCreateCourseTitle)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelCreateCourseTitle)
+                    .addComponent(buttonLogout))
                 .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelMode, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,6 +269,7 @@ public class ProfessorCourseCreationJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonLogout;
     private javax.swing.JButton buttonSave;
     private javax.swing.JCheckBox checkboxFriday;
     private javax.swing.JCheckBox checkboxMonday;
